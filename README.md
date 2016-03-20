@@ -8,7 +8,7 @@
 
 ##### Installation
 首先请安装[imageMagick](http://www.imagemagick.org/) 或者[GraphicsMagick](http://www.graphicsmagick.org/),
-可以使用另个模块[gm](https://github.com/aheckmann/gm)来验证是否安装正确。
+可以使用另一个模块[gm](https://github.com/aheckmann/gm)来验证是否安装正确。
 
 ```
   npm install image_phash
@@ -19,10 +19,11 @@
 
    var image_phash=require("image_phash");
    
-   var hash1=image_phash.imageHashSync("./test1.png"),
-       hash2=image_phash.imageHashSync("./test2.jpg");
-   var hamming_distance=image_phash.Hamming_distance(hash1,hash2);
+   var hash1=image_phash.imageHashSync("./test1.png"),//return the DCT Image Hash
+       hash2=image_phash.imageHashSync("./test2.jpg");//maybe you need to storage it for search
+	   
+   var hamming_distance=image_phash.Hamming_distance(hash1,hash2);//maybe you want use a different threshold to judge the images
    
-   var is_similar=image_phash.isSimilar(hash1,hash2);
+   var is_similar=image_phash.isSimilar(hash1,hash2);//Threshold set to 26.00.
    
 ```
