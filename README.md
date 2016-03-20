@@ -26,6 +26,8 @@
    var hamming_distance=image_phash.Hamming_distance(hash1,hash2);//maybe you want 
    //use a different threshold to judge the images
    
-   var is_similar=image_phash.isSimilar(hash1,hash2);//Threshold set to 26.00.
-   
+   var is_similar=image_phash.isSimilar(hash1,hash2);//Threshold set to 26.00. this 
+   //function return a boolean value,while 'true' means these two image is similar! 
 ```
+
+  
