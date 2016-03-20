@@ -1,0 +1,23 @@
+{
+  "name": "image_phash",
+  "version": "0.0.1",
+  "description": "Perceptual Hash,be used to find similar image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyrdl/image_pHash.git"
+  },
+  "keywords": [
+    "phash",
+    "image"
+  ],
+  "author": "Jason Zheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyrdl/image_pHash/issues"
+  },
+  "homepage": "https://github.com/yyrdl/image_pHash#readme"
+}
