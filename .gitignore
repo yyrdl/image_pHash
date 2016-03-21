@@ -1,15 +1,5 @@
 #intellij config
 .idea
-
-#npm dependency
-node_modules
-
-#bower dependency
-public/lib
-
-#jscoverage tmp file
-lib-cov
-
 #npm log
 npm-debug.log
 
