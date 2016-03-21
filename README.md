@@ -13,7 +13,7 @@ the code of trying to load image by built-in jpeglib ,and the code that deal wit
 mainly deals with images .And I removed the error that throw out by 'CImg.h',This change avoids the crash of your
 process when the CImg Object try to throw an error!
    
-  The module works well  if you have install [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/) correctly.
+  The module works well  if you have installed [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/) correctly.
 And I have tested this module in windows(win10)  and linux(ubutun).
   
 
