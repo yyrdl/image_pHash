@@ -1,6 +1,6 @@
 {
   "name": "image_phash",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "description": "Perceptual Hash,be used to find similar image",
   "main": "index.js",
   "scripts": {

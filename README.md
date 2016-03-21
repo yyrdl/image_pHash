@@ -10,13 +10,10 @@
 You can use it to find simillar image.
   The main C++ code is from [pHash](http://phash.org/),and I deleted some code that will not be used.Such as 
 the code of trying to load image by built-in jpeglib ,and the code that deal with text and video.etc. This module
-mainly deals with images .
-  And there is still a problem,that is the 'CImg.h' try to throw an error when it failed to load the image by external
-service ,which is surpported by [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/).
-It will kill the process.I have tried to catch the error use c++ code or javascript code, but failed!
-The only way to solve this is to modify the "CImg.h" file,but there is more than 50 thousand lines .......
-
-  Anyway, this module works well  if you have install [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/) correctly.
+mainly deals with images .And I removed the error that throw out by 'CImg.h',This change avoids the crash of your
+process when the CImg Object try to throw an error!
+   
+  The module works well  if you have install [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/) correctly.
 And I have tested this module in windows(win10)  and linux(ubutun).
   
 
