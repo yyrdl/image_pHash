@@ -1,14 +1,32 @@
 #### pHash
- ¸ĞÖª¹şÏ£Ëã·¨µÄnodeÊµÏÖ£¬¸ÃËã·¨Ö÷ÒªÓÃÓÚÌáÈ¡Ã½ÌåÎÄ¼şµÄÌØÕ÷Öµ£¬¿ÉÓÃÓÚÊ¶±ğÃ½ÌåÎÄ¼ş¡£
-µ«ÌØÕ÷ÖµÓëÃ½ÌåÎÄ¼şÖ®¼ä²¢²»ÊÇÎ¨Ò»¶ÔÓ¦¡£Ò»°ãÊ¹ÓÃ¸ÃËã·¨À´ÕÒ³öÖØ¸´µÄÃ½ÌåÎÄ¼ş¡£
+ æ„ŸçŸ¥å“ˆå¸Œç®—æ³•çš„nodeå®ç°ï¼Œè¯¥ç®—æ³•ä¸»è¦ç”¨äºæå–åª’ä½“æ–‡ä»¶çš„ç‰¹å¾å€¼ï¼Œå¯ç”¨äºè¯†åˆ«åª’ä½“æ–‡ä»¶ã€‚
+ä½†ç‰¹å¾å€¼ä¸åª’ä½“æ–‡ä»¶ä¹‹é—´å¹¶ä¸æ˜¯å”¯ä¸€å¯¹åº”ã€‚ä¸€èˆ¬ä½¿ç”¨è¯¥ç®—æ³•æ¥æ‰¾å‡ºé‡å¤çš„åª’ä½“æ–‡ä»¶ã€‚
 
-Ä£¿éµÄC++²¿·ÖÊ¹ÓÃÁË[pHash](http://phash.org/)Ìá¹©µÄC++¿â£¬²¢ÔÚÆäÉÏ×öÁË¾«¼ò£¬È¥³ıÁËÓÃ²»µ½µÄ²¿·Ö¡£
+æ¨¡å—çš„C++éƒ¨åˆ†ä½¿ç”¨äº†[pHash](http://phash.org/)æä¾›çš„C++åº“ï¼Œå¹¶åœ¨å…¶ä¸Šåšäº†ç²¾ç®€ï¼Œå»é™¤äº†ç”¨ä¸åˆ°çš„éƒ¨åˆ†ã€‚
 
-Ä¿Ç°Õâ¸öÄ£¿éÖ»ÓÃÓÚ´¦ÀíÍ¼Æ¬
+ç›®å‰è¿™ä¸ªæ¨¡å—åªç”¨äºå¤„ç†å›¾ç‰‡
+
+  A perceptual hash is a fingerprint of a multimedia file derived from various features from its content.
+You can use it to find simillar image.
+  The main C++ code is from [pHash](http://phash.org/),and I deleted some code that will not be used.Such as 
+the code of trying to load image by builed in jpeglib ,and the code that deal with text and video.etc. This module
+mainly deals with images .
+  And there is still a problem,that is the 'CImg.h' try to throw an error when it failed to load the image by external
+service ,which is surpported by [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/).
+It will kill the process.I have tried to catch the error use c++ code or javascript code, but failed!
+The only way to solve this is to modify the "CImg.h" file,but there is more than 50 thousand lines .......
+
+  Anyway, this module works well in if you have install [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org/) correctly.
+And I have tested this module in windows(win10)  and linux(ubutun).
+  
+
 
 #### Installation
-Ê×ÏÈÇë°²×°[imageMagick](http://www.imagemagick.org/) »òÕß[GraphicsMagick](http://www.graphicsmagick.org/),
-¿ÉÒÔÊ¹ÓÃÁíÒ»¸öÄ£¿é[gm](https://github.com/aheckmann/gm)À´ÑéÖ¤ÊÇ·ñ°²×°ÕıÈ·¡£
+é¦–å…ˆè¯·å®‰è£…[imageMagick](http://www.imagemagick.org/) æˆ–è€…[GraphicsMagick](http://www.graphicsmagick.org/),
+å¯ä»¥ä½¿ç”¨å¦ä¸€ä¸ªæ¨¡å—[gm](https://github.com/aheckmann/gm)æ¥éªŒè¯æ˜¯å¦å®‰è£…æ­£ç¡®ã€‚
+
+ At first ,please install [imageMagick](http://www.imagemagick.org/) or [GraphicsMagick](http://www.graphicsmagick.org),you can use [gm](https://github.com/aheckmann/gm) to verify the 
+installation.
 
 ```
   npm install image_phash
