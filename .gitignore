@@ -2,5 +2,6 @@
 .idea
 #npm log
 npm-debug.log
-#node_modules
+
+#npm dependency
 node_modules
