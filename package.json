@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "mocha":"*",
-    "chai":"3.4.0"
+    "chai":"3.4.0",
+    "path":"*"
   },
   "keywords": [
     "phash",
