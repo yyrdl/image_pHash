@@ -100,24 +100,24 @@ describe("Should not be simillar!",function(){
     it("1.jpg should not be simillar with 5.jpg",function(){
 
         var result=phash.isSimilar(hash1,hash5);
-        expect(result).to.equal(true);
+        expect(result).to.equal(false);
     });
 
     it("2.jpg should be simillar with 5.jpg",function(){
 
         var result=phash.isSimilar(hash2,hash5);
-        expect(result).to.equal(true);
+        expect(result).to.equal(false);
     });
 
     it("3.jpg should be simillar with 5.jpg",function(){
 
         var result=phash.isSimilar(hash3,hash5);
-        expect(result).to.equal(true);
+        expect(result).to.equal(false);
     });
 
     it("4.jpg should be simillar with 5.jpg",function(){
 
         var result=phash.isSimilar(hash4,hash5);
-        expect(result).to.equal(true);
+        expect(result).to.equal(false);
     });
 })
