@@ -2,5 +2,3 @@
 .idea
 #npm log
 npm-debug.log
-#c++ code
-build

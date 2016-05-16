@@ -4,11 +4,15 @@
   "description": "Perceptual Hash,be used to find similar image",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive --timeout 1000"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yyrdl/image_pHash.git"
+  },
+  "devDependencies": {
+    "mocha":"*",
+    "chai":"3.4.0"
   },
   "keywords": [
     "phash",
