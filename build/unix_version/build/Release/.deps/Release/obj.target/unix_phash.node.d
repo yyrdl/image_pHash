@@ -1,1 +1,0 @@
-cmd_Release/obj.target/unix_phash.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=unix_phash.node -o Release/obj.target/unix_phash.node -Wl,--start-group Release/obj.target/unix_phash/unix_phash.o -Wl,--end-group 
