@@ -97,8 +97,9 @@ const buildUnixVersion=function(){
             if(err){
                 console.error(err.stack);
                 console.log(stderr);
+                throw err;
             }else{
-                console.log(stdout);
+               throw new Error(stdout);
             }
         });
         build_process.on("error",function(err){
