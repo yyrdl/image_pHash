@@ -6,9 +6,7 @@ const exec=require("child_process").exec;
 const path=require("path");
 const fs=require("fs");
 const os=require("os");
-const clean=function(){
 
-}
 const buildWinVersion=function(){
      let  workdirectory=path.join(__dirname,"./build/win32");
 
@@ -28,6 +26,7 @@ const buildWinVersion=function(){
        if(fs.existsSync(path.join(workdirectory,"./build/Release/win32_phash.node"))){
            fs.linkSync(path.join(workdirectory,"./build/Release/win32_phash.node"),path.join(addon_path,"./win32_phash.node"));
            console.log("Build Done!");
+
        }else{
            throw new Error("Build Failed!");
        }
