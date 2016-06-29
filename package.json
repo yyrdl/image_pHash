@@ -4,7 +4,7 @@
   "description": "Perceptual Hash,be used to find similar image",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive --timeout 1000"
+    "test": "node build.js;mocha --recursive --timeout 1000"
   },
   "repository": {
     "type": "git",
