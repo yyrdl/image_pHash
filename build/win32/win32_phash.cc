@@ -93,4 +93,4 @@ void Init(Local<Object> exports) {
 
 NODE_MODULE(win32_phash, Init)
 
-}  
+}
