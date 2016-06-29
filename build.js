@@ -122,7 +122,7 @@ const buildUnixVersion=function(){
     config_process.on("exit",function(){
         var b=Buffer.concat(buf_c,buf_len);
         b=b.toString();
-        throw b;
+        throw new Error(b);
         fexceptions();
         nextStep();
     });
