@@ -117,7 +117,7 @@ const buildUnixVersion=function(){
 }
 
 const build=function(){
-    var os_type=os.platform(;
+    var os_type=os.platform();
     if(os_type=="win32"){
         buildWinVersion();
     }else{

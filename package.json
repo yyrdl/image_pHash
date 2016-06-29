@@ -1,6 +1,6 @@
 {
   "name": "image_phash",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "Perceptual Hash,be used to find similar image",
   "main": "index.js",
   "scripts": {
@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/yyrdl/image_pHash/issues"
   },
-  "homepage": "https://github.com/yyrdl/image_pHash#readme",
-  "dependencies": {
-    "nan": "^2.3.5"
-  }
+  "homepage": "https://github.com/yyrdl/image_pHash#readme"
 }
