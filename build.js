@@ -67,6 +67,8 @@ const buildUnixVersion=function(){
         if(err){
             console.error(err.stack);
             console.log(stderr);
+        }else{
+            console.log(stdout);
         }
     });
     let transform_node_addon=function(){
@@ -95,6 +97,8 @@ const buildUnixVersion=function(){
             if(err){
                 console.error(err.stack);
                 console.log(stderr);
+            }else{
+                console.log(stdout);
             }
         });
         build_process.on("error",function(err){
