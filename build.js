@@ -111,18 +111,11 @@ const buildUnixVersion=function(){
             transform_node_addon();
         });
     };
-    var buf_c=[],buf_len=0;
-    config_process.stdout.on("data",function(d){
-            buf_c.push(d);
-        buf_len+=d.length;
-    });
+  
     config_process.on("error",function(err){
         throw err;
     })
     config_process.on("exit",function(){
-        var b=Buffer.concat(buf_c,buf_len);
-        b=b.toString();
-        throw new Error(b);
         fexceptions();
         nextStep();
     });
