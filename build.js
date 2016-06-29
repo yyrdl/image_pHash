@@ -67,9 +67,7 @@ const buildUnixVersion=function(){
         if(err){
             console.error(err.stack);
             console.log(stderr);
-        }else{
-            console.log(stdout);
-        }
+        } 
     });
     let transform_node_addon=function(){
         let addon_path=path.join(__dirname,"./lib/Release/unix");
@@ -98,8 +96,6 @@ const buildUnixVersion=function(){
                 console.error(err.stack);
                 console.log(stderr);
                 throw err;
-            }else{
-               throw new Error(stdout);
             }
         });
         build_process.on("error",function(err){
@@ -111,7 +107,7 @@ const buildUnixVersion=function(){
             transform_node_addon();
         });
     };
-  
+
     config_process.on("error",function(err){
         throw err;
     })
