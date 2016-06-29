@@ -39,7 +39,8 @@ if you have set the compiling environment of special os correctly ,just run the 
 ###### unix
   * node-gyp 
   * python2.7 
-  * gcc 
+  * g++ 
+  
 ###### windows
   * node-gyp 
   * python2.7
