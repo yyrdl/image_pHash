@@ -25,7 +25,25 @@ installation.
 ```
   npm install image_phash
 ```
+the version in the npm warehouse only support node 4.*
+#### Build
+如果相应的编译环境设置正确，运行下面的命令即可自动编译C++扩展
 
+if you have set the compiling environment of special os correctly ,just run the command line below ,it will build the C++ addon  automatically.
+##### command line
+```
+   node build.js
+```
+##### compiling environment
+编译环境
+###### unix
+  * node-gyp 
+  * python2.7 
+  * gcc 
+###### windows
+  * node-gyp 
+  * python2.7
+  * windows的C++编译环境，安装visual studio会自动安装相应的编译环境
 #### Useage
 ```javascript
 
