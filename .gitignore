@@ -5,3 +5,7 @@ npm-debug.log
 
 #npm dependency
 node_modules
+#win build cache
+./build/win32/build
+#unix build cache
+./build/unix_version/build
