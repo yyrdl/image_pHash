@@ -45,6 +45,7 @@ if you have set the compiling environment of special os correctly ,just run the 
   * node-gyp 
   * python2.7
   * windows的C++编译环境，安装visual studio会自动安装相应的编译环境
+  
 #### Useage
 ```javascript
 
