@@ -25,7 +25,7 @@ installation.
 ```
   npm install image_phash
 ```
-the version in the npm warehouse only support node 4.*.For other node version ,please build it again.
+the version in the npm warehouse only support node 4.*.For other node version ,please rebuild.
 #### Build
 如果相应的编译环境设置正确，运行下面的命令即可自动编译C++扩展
 
